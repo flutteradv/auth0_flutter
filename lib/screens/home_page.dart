@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   Auth0 auth0;
   String pictureUrl;
   void logout() async {
-    auth0.auth.logoutUrl({'client_id': Authorization().clientId});
+    auth0.auth.logoutUrl({'client_id': Authorization.clientId});
     Navigator.pop(context);
   }
 
